@@ -63,18 +63,18 @@ export default function About() {
               <span className="text-emerald-500 text-sm font-mono font-medium tracking-wider uppercase">
                 About Me
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold font-mono text-zinc-100 mt-2 mb-6">
-                Developer, Colorado.
+              <h1 className="text-4xl md:text-5xl font-bold text-zinc-100 mt-2 mb-6">
+                Developer, Belgrade, MT.
               </h1>
               <div className="space-y-4 text-zinc-400 text-base leading-relaxed">
                 <p>
-                  I'm a full-stack developer based in Colorado with 5+ years of experience building web applications for startups, small businesses, and independent clients. I got my start in computer science, spent a few years at a Denver SaaS company building internal tooling, then went freelance to work directly with the businesses behind the products.
+                  I'm a full-stack developer based in Belgrade, Montana with 5+ years of experience building web applications for startups, small businesses, and independent clients. I got my start in computer science, spent a few years at a Denver SaaS company building internal tooling, then went freelance to work directly with the businesses behind the products.
                 </p>
                 <p>
-                  These days I specialize in React front-ends and Node.js backends — primarily apps that need to be fast, maintainable, and designed with the end user in mind. I enjoy the full picture: from database schema to UI animation.
+                  These days I specialize in React front-ends and Node.js backends, primarily apps that need to be fast, maintainable, and designed with the end user in mind. I enjoy the full picture: from database schema to UI animation.
                 </p>
                 <p>
-                  When I'm not writing code, I'm probably hiking somewhere in the Rockies or tinkering with a side project. I work primarily with clients in the US and operate on Mountain Time.
+                  When I'm not writing code, I'm probably out exploring Montana or tinkering with a side project. I work primarily with clients in the US and operate on Mountain Time.
                 </p>
               </div>
             </motion.div>
@@ -111,7 +111,7 @@ export default function About() {
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
               {skills.map(({ category, items }) => (
                 <div key={category} className="p-6 rounded-xl border border-zinc-800/60 bg-zinc-900/30">
-                  <h3 className="text-sm font-semibold font-mono text-zinc-300 mb-4">{category}</h3>
+                  <h3 className="text-sm font-semibold text-zinc-300 mb-4">{category}</h3>
                   <div className="flex flex-wrap gap-2">
                     {items.map((item) => (
                       <TechBadge key={item} label={item} />
@@ -144,7 +144,7 @@ export default function About() {
                   <div className="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-5">
                     <Icon size={20} className="text-emerald-400" />
                   </div>
-                  <h3 className="text-lg font-bold font-mono text-zinc-100 mb-3">{title}</h3>
+                  <h3 className="text-lg font-bold text-zinc-100 mb-3">{title}</h3>
                   <p className="text-zinc-500 text-sm leading-relaxed">{description}</p>
                 </motion.div>
               ))}
@@ -171,7 +171,7 @@ export default function About() {
                   transition={{ duration: 0.35, delay: i * 0.08 }}
                   className="flex gap-8 items-start py-6 border-b border-zinc-800/40 last:border-0"
                 >
-                  <div className="text-emerald-500 font-mono font-bold text-sm shrink-0 w-12 pt-0.5 text-right relative">
+                  <div className="text-emerald-500 font-bold text-sm shrink-0 w-12 pt-0.5 text-right relative">
                     {year}
                     {/* Dot */}
                     <div className="absolute -right-[2.15rem] top-1 w-2 h-2 rounded-full bg-emerald-500 hidden sm:block" />

@@ -135,7 +135,7 @@ export default function ContactForm() {
         <textarea
           id="message"
           rows={5}
-          placeholder="Tell me about your project — what you're building, the problem you're solving, and any timeline or technical details that would be helpful."
+          placeholder="Tell me about your project: what you're building, the problem you're solving, and any timeline or technical details that would be helpful."
           className={`${inputClass(!!errors.message)} resize-none`}
           {...register('message')}
         />

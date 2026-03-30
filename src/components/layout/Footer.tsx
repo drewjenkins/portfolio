@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <span className="flex items-center gap-2 text-zinc-500 text-sm">
                   <MapPin size={14} />
-                  Colorado, USA
+                  Belgrade, MT
                 </span>
               </li>
             </ul>

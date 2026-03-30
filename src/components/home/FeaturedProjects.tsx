@@ -8,7 +8,7 @@ const featured: Project[] = [
   {
     name: 'BudgetFlow',
     description:
-      'A full-stack personal finance app for tracking expenses, categorizing transactions, and managing budgets across multiple accounts — all in a clean, responsive dashboard.',
+      'A full-stack personal finance app for tracking expenses, categorizing transactions, and managing budgets across multiple accounts. Clean, responsive dashboard with real-time spending insights.',
     tech: ['React', 'TypeScript', 'Fastify', 'Prisma', 'PostgreSQL'],
     imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
     liveUrl: 'https://budgetflow-app-nine.vercel.app',
@@ -17,7 +17,7 @@ const featured: Project[] = [
   {
     name: 'Peak Ridge Contracting',
     description:
-      'A professional marketing website for a Colorado home contracting company — built for trust, lead generation, and fast load times on any device.',
+      'A professional marketing website for a Colorado home contracting company. Built for trust, lead generation, and fast load times on any device.',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
     liveUrl: 'https://peakridge.vercel.app',
@@ -26,7 +26,7 @@ const featured: Project[] = [
   {
     name: 'Copperline Coffee Roasters',
     description:
-      'An e-commerce storefront with product filtering, a persistent cart, and a multi-step checkout flow — built with smooth Framer Motion animations throughout.',
+      'An e-commerce storefront with product filtering, a persistent cart, and a multi-step checkout flow. Smooth Framer Motion animations throughout.',
     tech: ['React', 'TypeScript', 'Zustand', 'Framer Motion'],
     imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
     liveUrl: 'https://copperline.vercel.app',
@@ -42,7 +42,7 @@ export default function FeaturedProjects() {
           <SectionHeading
             label="Selected Work"
             title="Featured Projects"
-            subtitle="A sample of recent client and personal projects."
+            subtitle="A sample of recent projects."
           />
           <Link
             to="/projects"

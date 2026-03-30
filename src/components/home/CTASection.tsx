@@ -15,11 +15,11 @@ export default function CTASection() {
           <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-medium mb-6">
             Open to new projects
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-mono text-zinc-100 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-zinc-100 mb-4">
             Have a project in mind?
           </h2>
           <p className="text-zinc-500 text-lg mb-10 leading-relaxed">
-            Whether you need a web app built from scratch, a business site revamped, or an existing codebase cleaned up — let's talk.
+            Whether you need a web app built from scratch, a business site revamped, or an existing codebase cleaned up, let's talk.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

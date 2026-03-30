@@ -6,7 +6,7 @@ const values = [
     icon: Code2,
     title: 'Clean Code',
     description:
-      'Well-structured, readable, and maintainable code. No hacks, no shortcuts — just solid engineering that scales with your business.',
+      'Well-structured, readable, and maintainable code. No hacks, no shortcuts. Just solid engineering that scales with your business.',
   },
   {
     icon: MessageSquare,
@@ -30,7 +30,7 @@ export default function ValueProps() {
           <span className="text-emerald-500 text-sm font-mono font-medium tracking-wider uppercase">
             What to Expect
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold font-mono text-zinc-100 mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 mt-2">
             Working With Me
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function ValueProps() {
               <div className="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 group-hover:bg-emerald-500/15 transition-colors">
                 <Icon size={22} className="text-emerald-400" />
               </div>
-              <h3 className="text-lg font-bold font-mono text-zinc-100 mb-3">{title}</h3>
+              <h3 className="text-lg font-bold text-zinc-100 mb-3">{title}</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">{description}</p>
             </motion.div>
           ))}

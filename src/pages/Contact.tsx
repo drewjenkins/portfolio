@@ -19,7 +19,7 @@ export default function Contact() {
               <span className="text-emerald-500 text-sm font-mono font-medium tracking-wider uppercase">
                 Contact
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold font-mono text-zinc-100 mt-2 mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-zinc-100 mt-2 mb-4">
                 Let's Work Together
               </h1>
               <p className="text-zinc-400 text-base leading-relaxed mb-10">
@@ -65,7 +65,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-zinc-600 font-medium uppercase tracking-wide mb-0.5">Location</p>
-                    <p className="text-sm text-zinc-400">Colorado, USA (Mountain Time)</p>
+                    <p className="text-sm text-zinc-400">Belgrade, MT (Mountain Time)</p>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ export default function Contact() {
 
               <div className="p-5 rounded-xl bg-zinc-900/50 border border-zinc-800/60">
                 <p className="text-zinc-500 text-xs leading-relaxed">
-                  <span className="text-zinc-300 font-medium">Not sure if your project is a fit?</span> Send a message anyway — I'm happy to give a quick honest assessment, even if I'm not the right developer for the job.
+                  <span className="text-zinc-300 font-medium">Not sure if your project is a fit?</span> Send a message anyway. I'm happy to give a quick honest assessment, even if I'm not the right developer for the job.
                 </p>
               </div>
             </motion.div>

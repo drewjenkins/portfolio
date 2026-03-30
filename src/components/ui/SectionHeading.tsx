@@ -15,7 +15,7 @@ export default function SectionHeading({ label, title, subtitle, centered = fals
           {label}
         </span>
       )}
-      <h2 className={`text-3xl md:text-4xl font-bold text-zinc-100 mt-2 mb-4 font-mono ${label ? 'mt-2' : ''}`}>
+      <h2 className={`text-3xl md:text-4xl font-bold text-zinc-100 mt-2 mb-4 ${label ? 'mt-2' : ''}`}>
         {title}
       </h2>
       {subtitle && (
