@@ -115,7 +115,7 @@ export default function About() {
               <div className="relative">
                 <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-zinc-800">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+                    src="/andrew.jpeg"
                     alt="Andrew Jenkins"
                     className="w-full h-full object-cover"
                   />
