@@ -55,7 +55,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          I build fast, polished web applications that help businesses grow.
+          11 years of professional experience. React, Node.js, TypeScript, and integrations that actually work.
         </motion.p>
 
         <motion.div

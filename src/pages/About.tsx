@@ -3,6 +3,8 @@ import { Rocket, MessageSquare, Wrench } from 'lucide-react'
 import PageTransition from '../components/ui/PageTransition'
 import SectionHeading from '../components/ui/SectionHeading'
 import TechBadge from '../components/ui/TechBadge'
+import GithubIcon from '../components/ui/GithubIcon'
+import LinkedInIcon from '../components/ui/LinkedInIcon'
 
 const skills = [
   {
@@ -11,7 +13,11 @@ const skills = [
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Fastify', 'Express', 'PostgreSQL', 'Prisma'],
+    items: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs', 'MERN Stack'],
+  },
+  {
+    category: 'Integrations',
+    items: ['Salesforce', 'HubSpot', 'Zendesk', 'Webhooks', 'OAuth'],
   },
   {
     category: 'Tools & Platforms',
@@ -24,27 +30,27 @@ const approach = [
     icon: Rocket,
     title: 'Ship Fast',
     description:
-      'I believe in launching early and iterating. A working v1 in your users\' hands is more valuable than a perfect v2 that never ships. I scope work tightly, cut scope when needed, and keep momentum.',
+      "I believe in launching early and iterating. A working v1 in your users' hands is more valuable than a perfect v2 that never ships. I scope work tightly, cut scope when needed, and keep momentum.",
   },
   {
     icon: MessageSquare,
     title: 'Communicate Clearly',
     description:
-      'No jargon, no disappearing acts. You\'ll get regular updates in plain English, an honest assessment of tradeoffs, and quick responses to your questions throughout the project.',
+      "No jargon, no disappearing acts. You'll get regular updates in plain English, an honest assessment of tradeoffs, and quick responses to your questions throughout the project.",
   },
   {
     icon: Wrench,
     title: 'Build It Right',
     description:
-      'Clean code that your next developer (or future-you) will thank you for. Typed, tested where it matters, and documented so the knowledge doesn\'t leave when I do.',
+      "Clean code that your next developer (or future-you) will thank you for. Typed, tested where it matters, and documented so the knowledge doesn't leave when I do.",
   },
 ]
 
 const timeline = [
-  { year: '2019', event: 'Started freelancing alongside a full-time role at a Denver SaaS startup, building internal tooling and dashboards.' },
-  { year: '2021', event: 'Went full-time freelance after growing a client base through Upwork and referrals. Specializing in React + Node.js applications.' },
-  { year: '2022', event: 'Expanded into e-commerce and full-stack SaaS work. Added Prisma + PostgreSQL to the stack.' },
-  { year: '2024', event: 'Delivered 20+ projects across industries including finance, home services, and food & beverage.' },
+  { year: '2014', event: 'Graduated from Montana State University with a BS in Computer Science.' },
+  { year: '2015', event: 'Joined Oracle as a software developer, working on enterprise-scale applications and data integrations.' },
+  { year: '2019', event: 'Moved to HubSpot as a software developer, building CRM tooling and platform integrations used by thousands of customers.' },
+  { year: '2024', event: 'Available for freelance work, bringing 11 years of professional experience to smaller teams and focused projects.' },
 ]
 
 export default function About() {
@@ -68,14 +74,35 @@ export default function About() {
               </h1>
               <div className="space-y-4 text-zinc-400 text-base leading-relaxed">
                 <p>
-                  I'm a full-stack developer based in Belgrade, Montana with 5+ years of experience building web applications for startups, small businesses, and independent clients. I got my start in computer science, spent a few years at a Denver SaaS company building internal tooling, then went freelance to work directly with the businesses behind the products.
+                  I'm a senior software engineer with 11 years of professional experience, based in Belgrade, Montana. I hold a BS in Computer Science from Montana State University and have spent my career at companies like Oracle and HubSpot, where I worked on large-scale applications and platform integrations.
                 </p>
                 <p>
-                  These days I specialize in React front-ends and Node.js backends, primarily apps that need to be fast, maintainable, and designed with the end user in mind. I enjoy the full picture: from database schema to UI animation.
+                  My strongest areas are TypeScript, React, Node.js, and the MERN stack. I've also spent a lot of time on integration work, connecting tools like Salesforce, HubSpot, and Zendesk to client applications. If your project involves stitching systems together, I'm comfortable in that territory.
                 </p>
                 <p>
-                  When I'm not writing code, I'm probably out exploring Montana or tinkering with a side project. I work primarily with clients in the US and operate on Mountain Time.
+                  Outside of work, I live in Belgrade with my wife and our twin boys, Owen and Henry. When I'm not at the keyboard, I'm probably somewhere outside in Montana.
                 </p>
+              </div>
+
+              <div className="flex items-center gap-4 mt-8">
+                <a
+                  href="https://github.com/drewjenkins"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-zinc-400 hover:text-zinc-100 text-sm transition-colors"
+                >
+                  <GithubIcon size={16} />
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/andrewjamesjenkins"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-zinc-400 hover:text-zinc-100 text-sm transition-colors"
+                >
+                  <LinkedInIcon size={16} />
+                  LinkedIn
+                </a>
               </div>
             </motion.div>
 
@@ -108,7 +135,7 @@ export default function About() {
             className="mb-24"
           >
             <SectionHeading label="Skills" title="What I Work With" />
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {skills.map(({ category, items }) => (
                 <div key={category} className="p-6 rounded-xl border border-zinc-800/60 bg-zinc-900/30">
                   <h3 className="text-sm font-semibold text-zinc-300 mb-4">{category}</h3>
@@ -158,7 +185,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            <SectionHeading label="Experience" title="Timeline" />
+            <SectionHeading label="Experience" title="Background" />
             <div className="mt-10 space-y-0 relative">
               {/* Vertical line */}
               <div className="absolute left-16 top-0 bottom-0 w-px bg-zinc-800 hidden sm:block" />

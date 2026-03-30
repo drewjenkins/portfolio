@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin } from 'lucide-react'
 import GithubIcon from '../ui/GithubIcon'
+import LinkedInIcon from '../ui/LinkedInIcon'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -57,6 +58,17 @@ export default function Footer() {
                 >
                   <GithubIcon size={14} />
                   github.com/drewjenkins
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/andrewjamesjenkins"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-zinc-500 hover:text-zinc-300 text-sm transition-colors"
+                >
+                  <LinkedInIcon size={14} />
+                  linkedin.com/in/andrewjamesjenkins
                 </a>
               </li>
               <li>

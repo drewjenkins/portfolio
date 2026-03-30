@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Clock } from 'lucide-react'
 import GithubIcon from '../components/ui/GithubIcon'
+import LinkedInIcon from '../components/ui/LinkedInIcon'
 import PageTransition from '../components/ui/PageTransition'
 import ContactForm from '../components/contact/ContactForm'
 
@@ -55,6 +56,23 @@ export default function Contact() {
                     <p className="text-xs text-zinc-600 font-medium uppercase tracking-wide mb-0.5">GitHub</p>
                     <p className="text-sm text-zinc-300 group-hover:text-zinc-100 transition-colors">
                       github.com/drewjenkins
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/andrewjamesjenkins"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="w-11 h-11 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-zinc-700 group-hover:bg-zinc-800 transition-all">
+                    <LinkedInIcon size={17} className="text-emerald-400" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-zinc-600 font-medium uppercase tracking-wide mb-0.5">LinkedIn</p>
+                    <p className="text-sm text-zinc-300 group-hover:text-zinc-100 transition-colors">
+                      linkedin.com/in/andrewjamesjenkins
                     </p>
                   </div>
                 </a>
