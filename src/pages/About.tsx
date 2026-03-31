@@ -13,11 +13,11 @@ const skills = [
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs', 'MERN Stack'],
+    items: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs', 'Redis', 'ElasticSearch', 'WebSockets'],
   },
   {
     category: 'Integrations',
-    items: ['Salesforce', 'HubSpot', 'Zendesk', 'Webhooks', 'OAuth'],
+    items: ['Salesforce', 'HubSpot', 'Zendesk', 'Webhooks', 'OAuth', 'Web3/Crypto'],
   },
   {
     category: 'Tools & Platforms',
@@ -78,6 +78,9 @@ export default function About() {
                 </p>
                 <p>
                   My strongest areas are TypeScript, React, Node.js, and the MERN stack. I've also spent a lot of time on integration work, connecting tools like Salesforce, HubSpot, and Zendesk to client applications. If your project involves stitching systems together, I'm comfortable in that territory.
+                </p>
+                <p>
+                  I've also built in the crypto space, including a portfolio tracking app that processes transaction data and pulls live market prices for thousands of coins. That project pushed into WebSockets, Redis caching, and some creative infrastructure choices to keep costs down.
                 </p>
                 <p>
                   Outside of work, I live in Belgrade with my wife and our twin boys, Owen and Henry. When I'm not at the keyboard, I'm probably somewhere outside in Montana.

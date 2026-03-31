@@ -31,6 +31,15 @@ const projects: Project[] = [
     liveUrl: 'https://copperline.vercel.app',
     sourceUrl: 'https://github.com/drewjenkins/copperline',
   },
+  {
+    name: 'CryptoKeeper',
+    description:
+      'A Crypto.com portfolio tracker that parses CSV transaction exports to calculate positions, cost basis, gains/losses, and cashback rewards. Pulls live market prices for 4000+ coins via CoinGecko. Built because Crypto.com had no portfolio view and no public API. Features 40+ transaction types, wash sale detection, real-time WebSocket price feeds, two-tier Redis caching, and a PWA shell. Used HubSpot serverless functions as free compute for background workers.',
+    tech: ['React', 'TypeScript', 'Material UI', 'Node.js', 'Express', 'Redis', 'ElasticSearch', 'WebSockets', 'Auth0', 'CoinGecko API'],
+    imageUrl: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=900&q=80',
+    sourceUrl: 'https://github.com/drewjenkins/crypto-keeper',
+    archived: true,
+  },
 ]
 
 export default function Projects() {
@@ -96,15 +105,21 @@ function ProjectCaseStudy({ project, index }: { project: Project; index: number 
             ))}
           </div>
           <div className="flex items-center gap-3 flex-wrap">
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 text-sm"
-            >
-              <ExternalLink size={14} />
-              View Live Site
-            </a>
+            {project.archived ? (
+              <span className="inline-flex items-center gap-2 border border-zinc-700/60 text-zinc-500 font-medium px-5 py-2.5 rounded-lg text-sm">
+                Archived
+              </span>
+            ) : project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 text-sm"
+              >
+                <ExternalLink size={14} />
+                View Live Site
+              </a>
+            ) : null}
             <a
               href={project.sourceUrl}
               target="_blank"

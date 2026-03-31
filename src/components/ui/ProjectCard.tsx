@@ -8,8 +8,9 @@ export interface Project {
   description: string
   tech: string[]
   imageUrl: string
-  liveUrl: string
+  liveUrl?: string
   sourceUrl: string
+  archived?: boolean
 }
 
 interface ProjectCardProps {
@@ -38,10 +39,16 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
           ))}
         </div>
         <div className="flex items-center gap-3">
-          <Button href={project.liveUrl} external variant="primary" className="text-xs px-4 py-2">
-            <ExternalLink size={13} />
-            View Live
-          </Button>
+          {project.archived ? (
+            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-500 border border-zinc-700/60 rounded-lg px-4 py-2">
+              Archived
+            </span>
+          ) : project.liveUrl ? (
+            <Button href={project.liveUrl} external variant="primary" className="text-xs px-4 py-2">
+              <ExternalLink size={13} />
+              View Live
+            </Button>
+          ) : null}
           <Button href={project.sourceUrl} external variant="secondary" className="text-xs px-4 py-2">
             <GithubIcon size={13} />
             Source
